@@ -1,9 +1,13 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+//
+// By: Spicer Matthews <spicer@cloudmanic.com>
+// Company: Cloudmanic Labs, LLC
+// Website: http://www.cloudmanic.com
+//
 class Click_Tracker_upd 
 { 
-	private $version = '1.0';
-	private $module_name	=	'Click_Tracker'; 
+	var $version = '1.0';
+	var $module_name	=	'Click_Tracker'; 
   
   //
   // Constructor .....
@@ -24,7 +28,7 @@ class Click_Tracker_upd
 		$data = array(
 		  'module_name' => $this->module_name,
 		  'module_version' => $this->version,
-		  'has_cp_backend' => 'n',
+		  'has_cp_backend' => 'y',
 		  'has_publish_fields' => 'n'
 		);
 		$this->EE->db->insert('modules', $data);
